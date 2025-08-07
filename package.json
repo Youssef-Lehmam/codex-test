@@ -1,0 +1,34 @@
+{
+  "name": "temp-mail-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && wrangler pages publish dist",
+    "preview": "wrangler pages dev dist",
+    "test": "vitest run --environment jsdom src/tests/Inbox.test.tsx src/tests/hooks.test.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.0.0",
+    "hono": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "jsdom": "^26.1.0",
+    "playwright": "^1.39.0",
+    "typescript": "^5.0.0",
+    "unocss": "^0.60.0",
+    "vite": "^5.0.0",
+    "vitest": "^0.34.0",
+    "wrangler": "^3.0.0"
+  }
+}
