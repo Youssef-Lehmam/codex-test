@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenvex - Empowering Business Technology</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">Zenvex</div>
+        <button id="menu-btn" class="menu-btn" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="nav-menu" class="nav-menu">
+            <!-- Navigation items injected by TypeScript -->
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme"></button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section">
+            <div class="content">
+                <h1>Casablanca Metropolitan Area</h1>
+                <p>Zenvex is a next-generation IT services and consulting company focused on delivering scalable cloud solutions, DevOps automation, AI-driven insights, and robust cybersecurity strategies.</p>
+                <p class="mission">Our mission is simple: simplify complexity and empower businesses with technology that works seamlessly.</p>
+                <a href="#contact" class="btn primary">Start Your Journey</a>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>Founded in the heart of Casablanca, Zenvex blends global expertise with local insight. We help organizations of all sizes harness the power of the cloud, streamline DevOps pipelines, illuminate data with AI, and secure digital assets.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services section">
+            <div class="content">
+                <h2>Our Services</h2>
+                <div id="service-list" class="service-list">
+                    <!-- Service cards injected by TypeScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials section">
+            <div class="content">
+                <h2>Testimonials</h2>
+                <div class="testimonial-grid" id="testimonial-grid">
+                    <!-- Testimonials injected by TypeScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                        <small class="error" data-for="name"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                        <small class="error" data-for="email"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <small class="error" data-for="message"></small>
+                    </div>
+                    <button type="submit" class="btn secondary">Send Message</button>
+                    <p class="form-success" hidden>Your message has been sent!</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Zenvex. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="dist/main.js"></script>
+</body>
+</html>
